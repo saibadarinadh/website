@@ -34,7 +34,6 @@ function isRealWebsite(websiteUrl) {
         'www.amazon.com',
         'www.microsoft.com',
         'www.blogger.com',
-        "www.youtube.com",
 "www.google.com" ,
 "youtube.com" ,
 "support.google.com" ,
@@ -545,9 +544,14 @@ function isRealWebsite(websiteUrl) {
     if (realWebsites.includes(websiteUrl)) {
         return true;
     }
-
     
-
+    // Check other criteria to determine if the website is real or fake
+    // In this example, we are assuming that any website that starts with "https" is real, and any website that starts with "http" is fake.
+    if (websiteUrl.startsWith('https')) {
+        return true;
+    } else {
+        return false;
+    }
 }
 function generatePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSpecialChars) {
         var charset = '';
