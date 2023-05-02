@@ -34,6 +34,7 @@ function isRealWebsite(websiteUrl) {
         'www.amazon.com',
         'www.microsoft.com',
         'www.blogger.com',
+        "www.youtube.com",
 "www.google.com" ,
 "youtube.com" ,
 "support.google.com" ,
@@ -544,6 +545,7 @@ function isRealWebsite(websiteUrl) {
     if (realWebsites.includes(websiteUrl)) {
         return true;
     }
+
     
 
 }
