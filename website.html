@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Authenticity Checker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Is This Website Real or Fake?</h1>
+    <form id="websiteCheckerForm">
+        <label for="websiteUrl">Enter the website URL:</label>
+        <input type="text" id="websiteUrl" name="websiteUrl" required>
+
+        <button type="submit">Check</button>
+        
+    </form>
+    <div id="result"></div>
+
+    <h1>Password Generator</h1>
+    <form id="passwordGeneratorForm">
+        <label for="passwordLength">Password Length:</label>
+        <input type="number" id="passwordLength" name="passwordLength" min="6" max="20" value="12">
+        <br>
+        <label for="includeUppercase">Include Uppercase Letters:</label>
+        <input type="checkbox" id="includeUppercase" name="includeUppercase" checked>
+        <br>
+        <label for="includeLowercase">Include Lowercase Letters:</label>
+        <input type="checkbox" id="includeLowercase" name="includeLowercase" checked>
+        <br>
+        <label for="includeNumbers">Include Numbers:</label>
+        <input type="checkbox" id="includeNumbers" name="includeNumbers" checked>
+        <br>
+        <label for="includeSpecialChars">Include Special Characters:</label>
+        <input type="checkbox" id="includeSpecialChars" name="includeSpecialChars" checked>
+        <br>
+        <button type="submit">Generate Password</button>
+        <br>
+        <br>
+        
+        
+    </form>
+    <div id="passwordResult"></div>
+    <br>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
